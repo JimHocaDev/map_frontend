@@ -1,0 +1,40 @@
+.sidebar-find {
+  padding: 76px 14px 0 30px;
+}
+
+.sidebar-find__image-wrapper {
+  width: 123px;
+  height: 123px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 30px;
+  margin: 0 auto 42px auto;
+}
+
+.sidebar-find__input {
+  padding: 14px 0 14px 19px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: #fff;
+  width: 100%;
+
+  &:first-child {
+    margin-bottom: 6px;
+  }
+
+  &:nth-child(2) {
+    margin-bottom: 8px;
+  }
+
+  &::placeholder {
+    color: #5f5f5f;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.sidebar-find__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}

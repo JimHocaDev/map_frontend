@@ -1,0 +1,26 @@
+.sidebar-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.sidebar-item__btn {
+  background: #fff;
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+}
+
+.sidebar-find__btn {
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  background: #28b3ff;
+  padding: 6px 37px;
+
+  &:hover {
+    background: rgba(40, 179, 255, 0.8);
+  }
+}

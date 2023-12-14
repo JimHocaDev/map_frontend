@@ -1,0 +1,130 @@
+/* modal */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  display: none;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.open {
+  position: fixed;
+  display: flex;
+  z-index: 999;
+}
+
+.modal_wrapperModal {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.modal_button {
+  margin: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: none;
+}
+
+.modal_header {
+  margin-bottom: 20px;
+}
+
+.modalTitle {
+  font-size: 25px;
+  text-align: center;
+}
+
+.place__categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.place_categories1,
+.place_categories2 {
+  display: flex;
+  flex: 1 1;
+  justify-content: space-around;
+}
+
+.place_categories2 {
+  margin-top: 20px;
+  justify-content: space-evenly;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.place_categories1 button,
+.place_categories2 button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  width: 100px;
+  background: transparent;
+  border: none;
+}
+
+.place_categories1 button .add-place-categories__icon-container,
+.place_categories2 button .add-place-categories__icon-container {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  justify-content: center;
+  margin: 0;
+}
+
+.place_categories1 button svg,
+.place_categories2 button svg {
+  fill: white;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.add-place-categories__button-label {
+  color: #23262d;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.address svg {
+  background: #3195ff;
+}
+
+.business svg {
+  background: #2fc078;
+}
+
+.road svg {
+  background: #ff9b31;
+}
+
+.speed-limit svg {
+  background: #f34b35;
+}
+
+.incident svg {
+  background: #ff7e38;
+}
+
+.clearance svg {
+  background: #eeb117;
+}

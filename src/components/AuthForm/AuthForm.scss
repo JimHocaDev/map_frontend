@@ -1,0 +1,109 @@
+.auth__form-holder {
+  padding: 38px 27px 12px 24px;
+  border-radius: 10px;
+  border: 1px solid #cecece;
+  width: 100%;
+  max-width: 405px;
+  margin-bottom: 15px;
+}
+
+.auth__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth__email-label {
+  position: relative;
+  width: 100%;
+}
+
+.auth__password-label {
+  position: relative;
+  width: 100%;
+}
+
+.auth__show-password-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.auth__email-input {
+  padding: 14px 0 12.5px 16px;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid #cecece;
+  width: 100%;
+
+  &::placeholder {
+    color: #cecece;
+    font-weight: 600;
+    padding-left: 20px;
+    background: url("../../assets/icons/avatar.svg") no-repeat;
+    transform: translateX(3px);
+  }
+  //Turning off input fill color while autocomplete is used
+  // &:-webkit-autofill,
+  // &:-webkit-autofill:hover,
+  // &:-webkit-autofill:focus,
+  // &:-webkit-autofill:active {
+  //   -webkit-box-shadow: 0 0 0 30px white inset;
+  // }
+}
+
+.auth__password-input {
+  padding: 14px 0 12.5px 16px;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid #cecece;
+  border-top: 1px solid transparent;
+  width: 100%;
+
+  &::placeholder {
+    color: #cecece;
+    font-weight: 600;
+    padding-left: 20px;
+    background: url("../../assets/icons/lock.svg") no-repeat;
+    transform: translateX(2px);
+  }
+}
+
+.auth__password-input--error {
+  // border: 1px solid #cecece;
+  border-top: 1px solid transparent;
+}
+
+.auth__password-input-1 {
+  border-radius: 10px;
+  border-top: 1px solid #cecece;
+}
+
+.error-message {
+  color: red;
+  font-size: 11px;
+  margin: 5px 0;
+}
+
+.auth__stay-sign {
+  color: #b0b0b0;
+  font-size: 11px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.auth__second-code-input {
+  padding: 14px 0 12.5px 16px;
+  border-radius: 10px;
+  border: 1px solid #cecece;
+  width: 100%;
+  margin-top: 15px;
+
+  &::placeholder {
+    color: #cecece;
+    font-weight: 600;
+    // padding-left: 20px;
+  }
+}
+
+.auth__second-code-input-2::placeholder {
+  padding: 0;
+}

@@ -1,0 +1,22 @@
+.sidebar-nav__inner-wrapper {
+  padding: 18px 14px 14px 30px;
+}
+
+.sidebar-nav__search-input {
+  margin-bottom: 31px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 5px;
+  border: 1px solid #d7d7d7;
+  background: #fafafa;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.sidebar-nav__btn-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 21px;
+  row-gap: 15px;
+}

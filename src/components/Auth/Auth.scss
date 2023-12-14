@@ -1,0 +1,53 @@
+@import "../../assets/style/variables.scss";
+
+.auth__title {
+  color: $accent-color;
+  font-size: 48px;
+  font-style: normal;
+  line-height: normal;
+  margin: 0;
+  margin: 136px 0 44px 0;
+}
+
+.auth {
+  flex-direction: column;
+}
+
+.auth__txt {
+  margin: 0;
+}
+
+.auth__txt-wrapper {
+  margin-bottom: 16px;
+  gap: 2px;
+  display: flex;
+}
+
+//Form
+//
+
+.auth__google {
+  border: none;
+  outline: none;
+  color: #b3b3b3;
+  background: transparent;
+  font-size: 11px;
+  padding: 0;
+}
+
+.auth__bottom-wrapper {
+  flex-direction: column;
+  gap: 5px;
+}
+
+.auth__bottom-txt {
+  color: #b3b3b3;
+  font-size: 11px;
+}
+
+@media screen and (max-width: 380px) {
+  .auth__title {
+    font-size: xx-large;
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,142 @@
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.marker {
+  display: block;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+}
+
+.mapboxgl-ctrl-group button {
+  background: #fff;
+}
+
+.mapboxgl-ctrl-group button:hover {
+  background: #c1c8d5 !important;
+}
+
+.mapboxgl-ctrl-group {
+  display: flex;
+  background: transparent;
+  box-shadow: none;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mapboxgl-ctrl-group:not(:empty) {
+  box-shadow: none;
+}
+
+.mapboxgl-ctrl-attrib-inner {
+  display: none !important;
+}
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
+.mapboxgl-user-location-dot {
+  display: none !important;
+}
+
+.mapboxgl-user-location-accuracy-circle {
+  display: none !important;
+}
+
+.tooltip {
+  display: flex;
+  align-items: center;
+  background: white;
+  position: absolute;
+  z-index: 999;
+  bottom: 5%;
+  left: 50%;
+  gap: 10px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  min-width: 250px;
+}
+
+.tooltip span {
+  line-height: 1.1;
+}
+
+.popup_img {
+  width: 100%;
+  // height: 100%;
+  padding-top: 12px;
+}
+
+.popup_title {
+  text-align: center;
+  color: black;
+  font-weight: 700;
+}
+
+.closedEvent {
+  color: red;
+  position: absolute;
+  top: 0;
+}
+
+.clock_icon {
+  width: 100%;
+  height: 100%;
+  max-width: 20px;
+}
+
+.popup_time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.log_button button {
+  z-index: 1 !important;
+  position: absolute;
+  max-width: 100px;
+  right: 40px;
+  top: -60px;
+}
+
+.log_button.logout button {
+  background: #b23b3b !important;
+}
+
+.log_button.login button {
+  background: #00d05d !important;
+}
+
+@media screen and (max-width: 550px) {
+  .log_button button {
+    right: 5px;
+    top: -70px;
+    max-width: 70px;
+  }
+}
+
+.popup_desc {
+  word-wrap: break-word;
+}
+
+
+.marker_bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating_imgs{
+  display: flex;
+  align-items: center;
+  & span{
+    color: #ffe100;
+  }
+}
