@@ -839,6 +839,20 @@ export const Canvas: React.FC<CanvasProps> = ({
                 type="number"
                 placeholder="Rate 0-5"
                 ref={incidentEndRef}
+                min={0}
+                max={5}
+                onInput={(evt: any) => {
+                  if (evt.target.value == "" && +evt.target.value.length == 0) {
+                    evt.target.value = "";
+                  } else if (
+                    evt.target.value > evt.target.max ||
+                    evt.target.value.length > 1
+                  ) {
+                    evt.target.value = evt.target.max;
+                  } else if (evt.target.value < evt.target.min) {
+                    evt.target.value = evt.target.min;
+                  }
+                }}
               />
             </div>
 
