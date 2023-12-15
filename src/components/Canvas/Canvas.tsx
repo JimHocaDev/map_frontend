@@ -802,10 +802,13 @@ export const Canvas: React.FC<CanvasProps> = ({
 
             fetch("http://localhost:1337/api/plots", requestOptions)
               .then((response) => {
-                if (!response.ok) {
-                  throw new Error(
-                    `Request failed with status ${response.status}`
-                  );
+                if (
+                  localStorage.getItem("token") ||
+                  sessionStorage.getItem("token")
+                ) {
+                  location.reload();
+                } else {
+                  location.replace("/sign-in");
                 }
                 return response.text();
               })
